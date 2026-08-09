@@ -13,8 +13,19 @@ app.get(('/'), (req, res) => {
 });
 
 // The LOGIN route
-app.get(('/login'), (req, res) => {
-    res.render('login')
+app.get(('/catalogo'), (req, res) => {
+    res.render('catalogo')
 })
 
-app.listen(port)
+app.get(('/sign_up'), (req, res) => {
+    res.render('sign_up')
+});
+
+
+// APP listen
+app.listen(port, (error) => {
+    if (error) {
+        console.log("ERROR!");
+        return;
+    }
+});
