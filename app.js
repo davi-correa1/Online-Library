@@ -17,8 +17,8 @@ app.get(('/catalogo'), (req, res) => {
     res.render('catalogo')
 })
 
-app.get(('/sign_up'), (req, res) => {
-    res.render('sign_up')
+app.get(('/'), (req, res) => {
+    res.render('')
 });
 
 
