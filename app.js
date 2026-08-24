@@ -12,14 +12,15 @@ app.get(('/'), (req, res) => {
     res.render('root');
 });
 
+app.post(('/'), (req, res) => {
+    req.body('')
+});
+
+
 // The LOGIN route
 app.get(('/catalogo'), (req, res) => {
     res.render('catalogo')
 })
-
-app.get(('/'), (req, res) => {
-    res.render('')
-});
 
 
 // APP listen
